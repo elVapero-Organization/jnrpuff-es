@@ -14,74 +14,43 @@
 <link rel="shortcut icon" href="favicon.ico" />
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
 <link rel="manifest" href="site.webmanifest" />
-    <!-- JSON-LD for the current landing page only; product/offer schema belongs on the actual product URLs. -->
+    <!-- JSON-LD structured data for SEO/GEO, Product, ItemList and CollectionPage without price markup. -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "OnlineStore",
+          "@type": "Organization",
           "@id": "https://jnrpuff.es/#organization",
           "name": "JNR Puff",
-          "alternateName": "JNR PUFF - Vapers Desechables Cigarrillos Electronicos",
           "url": "https://jnrpuff.es/",
           "logo": {
             "@type": "ImageObject",
             "url": "https://jnrpuff.es/images/logo.png"
           },
           "image": "https://jnrpuff.es/images/logo.png",
-          "description": "Muchas personas buscan cuáles modelos son los mejores vapers desechables por su calidad, estabilidad y experiencia. Este sitio es informativo y comparativo: reúne datos generales y terminología del mercado de cigarrillos electrónicos y vaper con nicotina.",
           "email": "info@elvapero.es",
           "telephone": "+34 663 167 736",
-          "brand": {
-            "@type": "Brand",
-            "name": "JNR"
-          },
           "areaServed": {
             "@type": "Country",
-            "name": "Spain"
+            "name": "España"
           },
-          "availableLanguage": "es",
-          "contactPoint": [
-            {
-              "@type": "ContactPoint",
-              "contactType": "customer support",
-              "email": "info@elvapero.es",
-              "telephone": "+34 663 167 736",
-              "areaServed": "ES",
-              "availableLanguage": "es"
-            }
-          ]
+          "availableLanguage": "es-ES"
         },
         {
           "@type": "WebSite",
           "@id": "https://jnrpuff.es/#website",
           "url": "https://jnrpuff.es/",
           "name": "JNR Puff",
-          "inLanguage": "es",
           "publisher": {
             "@id": "https://jnrpuff.es/#organization"
-          }
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://jnrpuff.es/#webpage",
-          "url": "https://jnrpuff.es/",
-          "name": "JNR Puff",
-          "description": "Muchas personas buscan cuáles modelos son los mejores vapers desechables por su calidad, estabilidad y experiencia. Este sitio es informativo y comparativo: reúne datos generales y terminología del mercado de cigarrillos electrónicos y vaper con nicotina.",
-          "inLanguage": "es",
-          "isPartOf": {
-            "@id": "https://jnrpuff.es/#website"
           },
-          "about": {
-            "@id": "https://jnrpuff.es/#organization"
+          "inLanguage": "es-ES",
+          "areaServed": {
+            "@type": "Country",
+            "name": "España"
           },
-          "breadcrumb": {
-            "@id": "https://jnrpuff.es/#breadcrumb"
-          },
-          "mainEntity": {
-            "@id": "https://jnrpuff.es/#collection-page"
-          }
+          "availableLanguage": "es-ES"
         },
         {
           "@type": "BreadcrumbList",
@@ -92,6 +61,12 @@
               "position": 1,
               "name": "Inicio",
               "item": "https://jnrpuff.es/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "JNR",
+              "item": "https://jnrpuff.es/"
             }
           ]
         },
@@ -99,9 +74,18 @@
           "@type": "CollectionPage",
           "@id": "https://jnrpuff.es/#collection-page",
           "url": "https://jnrpuff.es/",
-          "name": "Vapers desechables JNR",
-          "description": "Landing page con una selección visible de vapers desechables JNR enlazados a sus fichas de producto.",
-          "inLanguage": "es",
+          "name": "JNR Puff",
+          "description": "Muchas personas buscan cuáles modelos son los mejores vapers desechables por su calidad, estabilidad y experiencia. Este sitio es informativo y comparativo: reúne datos generales y terminología del mercado de cigarrillos electrónicos y vaper con nicotina.",
+          "inLanguage": "es-ES",
+          "areaServed": {
+            "@type": "Country",
+            "name": "España"
+          },
+          "availableLanguage": "es-ES",
+          "about": {
+            "@type": "Brand",
+            "name": "JNR"
+          },
           "isPartOf": {
             "@id": "https://jnrpuff.es/#website"
           },
@@ -109,98 +93,422 @@
             "@id": "https://jnrpuff.es/#breadcrumb"
           },
           "mainEntity": {
-            "@id": "https://jnrpuff.es/#product-list"
+            "@id": "https://jnrpuff.es/#itemlist"
           }
         },
         {
           "@type": "ItemList",
-          "@id": "https://jnrpuff.es/#product-list",
-          "name": "Colecciones principales de JNR",
+          "@id": "https://jnrpuff.es/#itemlist",
+          "name": "Vapers desechables – Cigarrillos Electrónicos JNR",
           "numberOfItems": 12,
           "itemListElement": [
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "JNR Quads 120K",
-              "url": "https://elvapero.es/products/jnr-quads-120k-caladas-120000",
-              "image": "https://jnrpuff.es/images/products/JNR-Quads-4-en-1-120K-Vaper-Desechable-Cigarrillo-Electronico-120000-Caladas.png"
+              "item": {
+                "@type": "Product",
+                "@id": "https://elvapero.es/products/jnr-quads-120k-caladas-120000#product",
+                "name": "JNR Quads 120K",
+                "url": "https://elvapero.es/products/jnr-quads-120k-caladas-120000",
+                "image": "https://jnrpuff.es/images/products/JNR-Quads-4-en-1-120K-Vaper-Desechable-Cigarrillo-Electronico-120000-Caladas.png",
+                "description": "Vaper desechable JNR Quads 120K con 120000 caladas para usuarios adultos en España.",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "JNR"
+                },
+                "category": "Vapers desechables",
+                "offers": {
+                  "@type": "Offer",
+                  "url": "https://elvapero.es/products/jnr-quads-120k-caladas-120000",
+                  "priceCurrency": "EUR",
+                  "availability": "https://schema.org/InStock",
+                  "itemCondition": "https://schema.org/NewCondition",
+                  "seller": {
+                    "@type": "Organization",
+                    "name": "ElVapero.es",
+                    "url": "https://elvapero.es/"
+                  },
+                  "areaServed": {
+                    "@type": "Country",
+                    "name": "España"
+                  },
+                  "availableDeliveryMethod": "https://schema.org/ParcelService"
+                }
+              }
             },
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "JNR Triple 110K",
-              "url": "https://www.elvapero.es/products/jnr-triple-110k-caladas-110000",
-              "image": "https://jnrpuff.es/images/products/JNR-Triple-3-en-1-110K-Vaper-Desechable-Cigarrillo-Electronico-110000-Caladas.png"
+              "item": {
+                "@type": "Product",
+                "@id": "https://elvapero.es/products/jnr-triple-110k-caladas-110000#product",
+                "name": "JNR Triple 110K",
+                "url": "https://elvapero.es/products/jnr-triple-110k-caladas-110000",
+                "image": "https://jnrpuff.es/images/products/JNR-Triple-3-en-1-110K-Vaper-Desechable-Cigarrillo-Electronico-110000-Caladas.png",
+                "description": "Vaper desechable JNR Triple 110K con 110000 caladas para usuarios adultos en España.",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "JNR"
+                },
+                "category": "Vapers desechables",
+                "offers": {
+                  "@type": "Offer",
+                  "url": "https://elvapero.es/products/jnr-triple-110k-caladas-110000",
+                  "priceCurrency": "EUR",
+                  "availability": "https://schema.org/InStock",
+                  "itemCondition": "https://schema.org/NewCondition",
+                  "seller": {
+                    "@type": "Organization",
+                    "name": "ElVapero.es",
+                    "url": "https://elvapero.es/"
+                  },
+                  "areaServed": {
+                    "@type": "Country",
+                    "name": "España"
+                  },
+                  "availableDeliveryMethod": "https://schema.org/ParcelService"
+                }
+              }
             },
             {
               "@type": "ListItem",
               "position": 3,
-              "name": "JNR RageGorilla 55K",
-              "url": "https://elvapero.es/products/jnr-ragegorilla-55k-caladas-55000",
-              "image": "https://jnrpuff.es/images/products/JNR-RageGorilla-55K-Vaper-Desechable-Cigarrillo-Electronico-55000-Caladas.png"
+              "item": {
+                "@type": "Product",
+                "@id": "https://elvapero.es/products/jnr-ragegorilla-55k-caladas-55000#product",
+                "name": "JNR RageGorilla 55K",
+                "url": "https://elvapero.es/products/jnr-ragegorilla-55k-caladas-55000",
+                "image": "https://jnrpuff.es/images/products/JNR-RageGorilla-55K-Vaper-Desechable-Cigarrillo-Electronico-55000-Caladas.png",
+                "description": "Vaper desechable JNR RageGorilla 55K con 55000 caladas para usuarios adultos en España.",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "JNR"
+                },
+                "category": "Vapers desechables",
+                "offers": {
+                  "@type": "Offer",
+                  "url": "https://elvapero.es/products/jnr-ragegorilla-55k-caladas-55000",
+                  "priceCurrency": "EUR",
+                  "availability": "https://schema.org/InStock",
+                  "itemCondition": "https://schema.org/NewCondition",
+                  "seller": {
+                    "@type": "Organization",
+                    "name": "ElVapero.es",
+                    "url": "https://elvapero.es/"
+                  },
+                  "areaServed": {
+                    "@type": "Country",
+                    "name": "España"
+                  },
+                  "availableDeliveryMethod": "https://schema.org/ParcelService"
+                }
+              }
             },
             {
               "@type": "ListItem",
               "position": 4,
-              "name": "JNR Mega Box Pro 50K",
-              "url": "https://elvapero.es/products/jnr-mega-box-pro-50k-caladas-50000",
-              "image": "https://jnrpuff.es/images/products/JNR-Mega-Box-Pro-50K-Vaper-Desechable-Cigarrillo-Electronico-50000-Caladas.png"
+              "item": {
+                "@type": "Product",
+                "@id": "https://elvapero.es/products/jnr-mega-box-pro-50k-caladas-50000#product",
+                "name": "JNR Mega Box Pro 50K",
+                "url": "https://elvapero.es/products/jnr-mega-box-pro-50k-caladas-50000",
+                "image": "https://jnrpuff.es/images/products/JNR-Mega-Box-Pro-50K-Vaper-Desechable-Cigarrillo-Electronico-50000-Caladas.png",
+                "description": "Vaper desechable JNR Mega Box Pro 50K con 50000 caladas para usuarios adultos en España.",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "JNR"
+                },
+                "category": "Vapers desechables",
+                "offers": {
+                  "@type": "Offer",
+                  "url": "https://elvapero.es/products/jnr-mega-box-pro-50k-caladas-50000",
+                  "priceCurrency": "EUR",
+                  "availability": "https://schema.org/InStock",
+                  "itemCondition": "https://schema.org/NewCondition",
+                  "seller": {
+                    "@type": "Organization",
+                    "name": "ElVapero.es",
+                    "url": "https://elvapero.es/"
+                  },
+                  "areaServed": {
+                    "@type": "Country",
+                    "name": "España"
+                  },
+                  "availableDeliveryMethod": "https://schema.org/ParcelService"
+                }
+              }
             },
             {
               "@type": "ListItem",
               "position": 5,
-              "name": "JNR Mega Box 25K",
-              "url": "https://www.elvapero.es/products/jnr-mega-box-25k-caladas-25000",
-              "image": "https://jnrpuff.es/images/products/JNR-Mega-Box-25K-Vaper-Desechable-Cigarrillo-Electronico-25000-Caladas.png"
+              "item": {
+                "@type": "Product",
+                "@id": "https://elvapero.es/products/jnr-mega-box-25k-caladas-25000#product",
+                "name": "JNR Mega Box 25K",
+                "url": "https://elvapero.es/products/jnr-mega-box-25k-caladas-25000",
+                "image": "https://jnrpuff.es/images/products/JNR-Mega-Box-25K-Vaper-Desechable-Cigarrillo-Electronico-25000-Caladas.png",
+                "description": "Vaper desechable JNR Mega Box 25K con 25000 caladas para usuarios adultos en España.",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "JNR"
+                },
+                "category": "Vapers desechables",
+                "offers": {
+                  "@type": "Offer",
+                  "url": "https://elvapero.es/products/jnr-mega-box-25k-caladas-25000",
+                  "priceCurrency": "EUR",
+                  "availability": "https://schema.org/InStock",
+                  "itemCondition": "https://schema.org/NewCondition",
+                  "seller": {
+                    "@type": "Organization",
+                    "name": "ElVapero.es",
+                    "url": "https://elvapero.es/"
+                  },
+                  "areaServed": {
+                    "@type": "Country",
+                    "name": "España"
+                  },
+                  "availableDeliveryMethod": "https://schema.org/ParcelService"
+                }
+              }
             },
             {
               "@type": "ListItem",
               "position": 6,
-              "name": "JNR Leopard 40K",
-              "url": "https://www.elvapero.es/products/jnr-leopard-40k-caladas-40000",
-              "image": "https://jnrpuff.es/images/products/JNR-Leopard-40K-Vaper-Desechable-Cigarrillo-Electronico-40000-Caladas.png"
+              "item": {
+                "@type": "Product",
+                "@id": "https://elvapero.es/products/jnr-leopard-40k-caladas-40000#product",
+                "name": "JNR Leopard 40K",
+                "url": "https://elvapero.es/products/jnr-leopard-40k-caladas-40000",
+                "image": "https://jnrpuff.es/images/products/JNR-Leopard-40K-Vaper-Desechable-Cigarrillo-Electronico-40000-Caladas.png",
+                "description": "Vaper desechable JNR Leopard 40K con 40000 caladas para usuarios adultos en España.",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "JNR"
+                },
+                "category": "Vapers desechables",
+                "offers": {
+                  "@type": "Offer",
+                  "url": "https://elvapero.es/products/jnr-leopard-40k-caladas-40000",
+                  "priceCurrency": "EUR",
+                  "availability": "https://schema.org/InStock",
+                  "itemCondition": "https://schema.org/NewCondition",
+                  "seller": {
+                    "@type": "Organization",
+                    "name": "ElVapero.es",
+                    "url": "https://elvapero.es/"
+                  },
+                  "areaServed": {
+                    "@type": "Country",
+                    "name": "España"
+                  },
+                  "availableDeliveryMethod": "https://schema.org/ParcelService"
+                }
+              }
             },
             {
               "@type": "ListItem",
               "position": 7,
-              "name": "JNR Falcon Bar 48K",
-              "url": "https://elvapero.es/products/jnr-falcon-bar-48k-caladas-48000",
-              "image": "https://jnrpuff.es/images/products/JNR-Falcon-Bar-48K-Vaper-Desechable-Cigarrillo-Electronico-48000-Caladas.png"
+              "item": {
+                "@type": "Product",
+                "@id": "https://elvapero.es/products/jnr-falcon-bar-48k-caladas-48000#product",
+                "name": "JNR Falcon Bar 48K",
+                "url": "https://elvapero.es/products/jnr-falcon-bar-48k-caladas-48000",
+                "image": "https://jnrpuff.es/images/products/JNR-Falcon-Bar-48K-Vaper-Desechable-Cigarrillo-Electronico-48000-Caladas.png",
+                "description": "Vaper desechable JNR Falcon Bar 48K con 48000 caladas para usuarios adultos en España.",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "JNR"
+                },
+                "category": "Vapers desechables",
+                "offers": {
+                  "@type": "Offer",
+                  "url": "https://elvapero.es/products/jnr-falcon-bar-48k-caladas-48000",
+                  "priceCurrency": "EUR",
+                  "availability": "https://schema.org/InStock",
+                  "itemCondition": "https://schema.org/NewCondition",
+                  "seller": {
+                    "@type": "Organization",
+                    "name": "ElVapero.es",
+                    "url": "https://elvapero.es/"
+                  },
+                  "areaServed": {
+                    "@type": "Country",
+                    "name": "España"
+                  },
+                  "availableDeliveryMethod": "https://schema.org/ParcelService"
+                }
+              }
             },
             {
               "@type": "ListItem",
               "position": 8,
-              "name": "JNR Falcon Pro 28K",
-              "url": "https://elvapero.es/products/jnr-falcon-pro-28k-caladas-28000",
-              "image": "https://jnrpuff.es/images/products/JNR-Falcon-Pro-28K-Vaper-Desechable-Cigarrillo-Electronico-28000-Caladas.png"
+              "item": {
+                "@type": "Product",
+                "@id": "https://elvapero.es/products/jnr-falcon-pro-28k-caladas-28000#product",
+                "name": "JNR Falcon Pro 28K",
+                "url": "https://elvapero.es/products/jnr-falcon-pro-28k-caladas-28000",
+                "image": "https://jnrpuff.es/images/products/JNR-Falcon-Pro-28K-Vaper-Desechable-Cigarrillo-Electronico-28000-Caladas.png",
+                "description": "Vaper desechable JNR Falcon Pro 28K con 28000 caladas para usuarios adultos en España.",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "JNR"
+                },
+                "category": "Vapers desechables",
+                "offers": {
+                  "@type": "Offer",
+                  "url": "https://elvapero.es/products/jnr-falcon-pro-28k-caladas-28000",
+                  "priceCurrency": "EUR",
+                  "availability": "https://schema.org/InStock",
+                  "itemCondition": "https://schema.org/NewCondition",
+                  "seller": {
+                    "@type": "Organization",
+                    "name": "ElVapero.es",
+                    "url": "https://elvapero.es/"
+                  },
+                  "areaServed": {
+                    "@type": "Country",
+                    "name": "España"
+                  },
+                  "availableDeliveryMethod": "https://schema.org/ParcelService"
+                }
+              }
             },
             {
               "@type": "ListItem",
               "position": 9,
-              "name": "JNR Alien 10K",
-              "url": "https://elvapero.es/products/jnr-alien-10k-caladas-10000",
-              "image": "https://jnrpuff.es/images/products/JNR-Alien-10K-Vaper-Desechable-Cigarrillo-Electronico-10000-Caladas.png"
+              "item": {
+                "@type": "Product",
+                "@id": "https://elvapero.es/products/jnr-alien-10k-caladas-10000#product",
+                "name": "JNR Alien 10K",
+                "url": "https://elvapero.es/products/jnr-alien-10k-caladas-10000",
+                "image": "https://jnrpuff.es/images/products/JNR-Alien-10K-Vaper-Desechable-Cigarrillo-Electronico-10000-Caladas.png",
+                "description": "Vaper desechable JNR Alien 10K con 10000 caladas para usuarios adultos en España.",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "JNR"
+                },
+                "category": "Vapers desechables",
+                "offers": {
+                  "@type": "Offer",
+                  "url": "https://elvapero.es/products/jnr-alien-10k-caladas-10000",
+                  "priceCurrency": "EUR",
+                  "availability": "https://schema.org/InStock",
+                  "itemCondition": "https://schema.org/NewCondition",
+                  "seller": {
+                    "@type": "Organization",
+                    "name": "ElVapero.es",
+                    "url": "https://elvapero.es/"
+                  },
+                  "areaServed": {
+                    "@type": "Country",
+                    "name": "España"
+                  },
+                  "availableDeliveryMethod": "https://schema.org/ParcelService"
+                }
+              }
             },
             {
               "@type": "ListItem",
               "position": 10,
-              "name": "JNR Falcon 16K",
-              "url": "https://elvapero.es/products/jnr-falcon-16k-caladas-16000",
-              "image": "https://jnrpuff.es/images/products/JNR-Falcon-16K-Vaper-Desechable-Cigarrillo-Electronico-16000-Caladas.png"
+              "item": {
+                "@type": "Product",
+                "@id": "https://elvapero.es/products/jnr-falcon-16k-caladas-16000#product",
+                "name": "JNR Falcon 16K",
+                "url": "https://elvapero.es/products/jnr-falcon-16k-caladas-16000",
+                "image": "https://jnrpuff.es/images/products/JNR-Falcon-16K-Vaper-Desechable-Cigarrillo-Electronico-16000-Caladas.png",
+                "description": "Vaper desechable JNR Falcon 16K con 16000 caladas para usuarios adultos en España.",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "JNR"
+                },
+                "category": "Vapers desechables",
+                "offers": {
+                  "@type": "Offer",
+                  "url": "https://elvapero.es/products/jnr-falcon-16k-caladas-16000",
+                  "priceCurrency": "EUR",
+                  "availability": "https://schema.org/InStock",
+                  "itemCondition": "https://schema.org/NewCondition",
+                  "seller": {
+                    "@type": "Organization",
+                    "name": "ElVapero.es",
+                    "url": "https://elvapero.es/"
+                  },
+                  "areaServed": {
+                    "@type": "Country",
+                    "name": "España"
+                  },
+                  "availableDeliveryMethod": "https://schema.org/ParcelService"
+                }
+              }
             },
             {
               "@type": "ListItem",
               "position": 11,
-              "name": "JNR Falcon X 18K",
-              "url": "https://elvapero.es/products/jnr-falcon-x-18k-caladas-18000",
-              "image": "https://jnrpuff.es/images/products/JNR-Falcon-X-18K-Vaper-Desechable-Cigarrillo-Electronico-18000-Caladas.png"
+              "item": {
+                "@type": "Product",
+                "@id": "https://elvapero.es/products/jnr-falcon-x-18k-caladas-18000#product",
+                "name": "JNR Falcon X 18K",
+                "url": "https://elvapero.es/products/jnr-falcon-x-18k-caladas-18000",
+                "image": "https://jnrpuff.es/images/products/JNR-Falcon-X-18K-Vaper-Desechable-Cigarrillo-Electronico-18000-Caladas.png",
+                "description": "Vaper desechable JNR Falcon X 18K con 18000 caladas para usuarios adultos en España.",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "JNR"
+                },
+                "category": "Vapers desechables",
+                "offers": {
+                  "@type": "Offer",
+                  "url": "https://elvapero.es/products/jnr-falcon-x-18k-caladas-18000",
+                  "priceCurrency": "EUR",
+                  "availability": "https://schema.org/InStock",
+                  "itemCondition": "https://schema.org/NewCondition",
+                  "seller": {
+                    "@type": "Organization",
+                    "name": "ElVapero.es",
+                    "url": "https://elvapero.es/"
+                  },
+                  "areaServed": {
+                    "@type": "Country",
+                    "name": "España"
+                  },
+                  "availableDeliveryMethod": "https://schema.org/ParcelService"
+                }
+              }
             },
             {
               "@type": "ListItem",
               "position": 12,
-              "name": "JNR Shisha Hookah Max 22K",
-              "url": "https://elvapero.es/products/jnr-shisha-hookah-max-22k-caladas-22000",
-              "image": "https://jnrpuff.es/images/products/JNR-Shisha-Hookah-Max-22K-Vaper-Desechable-Cigarrillo-Electronico-22000-Caladas.png"
+              "item": {
+                "@type": "Product",
+                "@id": "https://elvapero.es/products/jnr-shisha-hookah-max-22k-caladas-22000#product",
+                "name": "JNR Shisha Hookah Max 22K",
+                "url": "https://elvapero.es/products/jnr-shisha-hookah-max-22k-caladas-22000",
+                "image": "https://jnrpuff.es/images/products/JNR-Shisha-Hookah-Max-22K-Vaper-Desechable-Cigarrillo-Electronico-22000-Caladas.png",
+                "description": "Vaper desechable JNR Shisha Hookah Max 22K con 22000 caladas para usuarios adultos en España.",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "JNR"
+                },
+                "category": "Vapers desechables",
+                "offers": {
+                  "@type": "Offer",
+                  "url": "https://elvapero.es/products/jnr-shisha-hookah-max-22k-caladas-22000",
+                  "priceCurrency": "EUR",
+                  "availability": "https://schema.org/InStock",
+                  "itemCondition": "https://schema.org/NewCondition",
+                  "seller": {
+                    "@type": "Organization",
+                    "name": "ElVapero.es",
+                    "url": "https://elvapero.es/"
+                  },
+                  "areaServed": {
+                    "@type": "Country",
+                    "name": "España"
+                  },
+                  "availableDeliveryMethod": "https://schema.org/ParcelService"
+                }
+              }
             }
           ]
         }
@@ -218,11 +526,11 @@
                         <span class="gradient-text">JNR</span>
                     </div>
                     <div class="nav-menu" id="navMenu">
-                        <a href="https://www.elvapero.es" class="nav-link active">Página Principal</a>
-                        <a href="https://www.elvapero.es" class="nav-link">Productos</a>
-                        <a href="https://www.elvapero.es" class="nav-link">Sobre nosotros</a>
-                        <a href="https://www.elvapero.es" class="nav-link">Blog</a>
-                        <a href="https://www.elvapero.es" class="nav-link">Contacto</a>
+                        <a href="https://elvapero.es" class="nav-link active">Página Principal</a>
+                        <a href="https://elvapero.es" class="nav-link">Productos</a>
+                        <a href="https://elvapero.es" class="nav-link">Sobre nosotros</a>
+                        <a href="https://elvapero.es" class="nav-link">Blog</a>
+                        <a href="https://elvapero.es" class="nav-link">Contacto</a>
                     </div>
                     <div class="nav-actions"></div>
                     <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
@@ -250,7 +558,7 @@
                 </button>
                 <div class="carousel-viewport">
                     <div class="carousel-track">
-                        <a href="https://www.elvapero.es/products/jnr-falcon-16k-caladas-16000" class="carousel-card active">
+                        <a href="https://elvapero.es/products/jnr-falcon-16k-caladas-16000" class="carousel-card active">
                             <div class="carousel-card-image">
                         <img src="images/products/JNR-Falcon-16K-Vaper-Desechable-Cigarrillo-Electronico-16000-Caladas.png" alt="Falcon 16K caladas vapers desechables vaper desechable vaper con nicotina cigarrillos electrónicos muchas caladas sabores vaper puff cigarrillos electrónicos desechables" loading="lazy">
                             </div>
@@ -259,7 +567,7 @@
                                 <p class="carousel-flavor">Vaper Desechable</p>
                             </div>
                         </a>
-                        <a href="https://www.elvapero.es/products/jnr-mega-box-25k-caladas-25000" class="carousel-card">
+                        <a href="https://elvapero.es/products/jnr-mega-box-25k-caladas-25000" class="carousel-card">
                             <div class="carousel-card-image">
                                 <img src="images/products/JNR-Mega-Box-25K-Vaper-Desechable-Cigarrillo-Electronico-25000-Caladas.png" alt="Mega Box 25K caladas vapers desechables vaper desechable vaper con nicotina cigarrillos electrónicos muchas caladas sabores vaper puff cigarrillos electrónicos desechables" loading="lazy">
                             </div>
@@ -268,7 +576,7 @@
                                 <p class="carousel-flavor">Vaper Desechable</p>
                             </div>
                         </a>
-                        <a href="https://www.elvapero.es/products/jnr-ragegorilla-55k-caladas-55000" class="carousel-card">
+                        <a href="https://elvapero.es/products/jnr-ragegorilla-55k-caladas-55000" class="carousel-card">
                             <div class="carousel-card-image">
                                 <img src="images/products/JNR-RageGorilla-55K-Vaper-Desechable-Cigarrillo-Electronico-55000-Caladas.png" alt="RageGorilla 55K caladas vapers desechables vaper desechable vaper con nicotina cigarrillos electrónicos muchas caladas sabores vaper puff cigarrillos electrónicos desechables" loading="lazy">
                             </div>
@@ -277,7 +585,7 @@
                                 <p class="carousel-flavor">Vaper Desechable</p>
                             </div>
                         </a>
-                        <a href="https://www.elvapero.es/products/jnr-leopard-40k-caladas-40000" class="carousel-card">
+                        <a href="https://elvapero.es/products/jnr-leopard-40k-caladas-40000" class="carousel-card">
                             <div class="carousel-card-image">
                                 <img src="images/products/JNR-Leopard-40K-Vaper-Desechable-Cigarrillo-Electronico-40000-Caladas.png" alt="Leopard 40K caladas vapers desechables vaper desechable vaper con nicotina cigarrillos electrónicos muchas caladas sabores vaper puff cigarrillos electrónicos desechables" loading="lazy">
                             </div>
@@ -286,7 +594,7 @@
                                 <p class="carousel-flavor">Vaper Desechable</p>
                             </div>
                         </a>
-                        <a href="https://www.elvapero.es/products/jnr-mega-box-pro-50k-caladas-50000" class="carousel-card">
+                        <a href="https://elvapero.es/products/jnr-mega-box-pro-50k-caladas-50000" class="carousel-card">
                             <div class="carousel-card-image">
                                 <img src="images/products/JNR-Mega-Box-Pro-50K-Vaper-Desechable-Cigarrillo-Electronico-50000-Caladas.png" alt="Mega Box Pro 50K caladas vapers desechables vaper desechable vaper con nicotina cigarrillos electrónicos muchas caladas sabores vaper puff cigarrillos electrónicos desechables" loading="lazy">
                             </div>
@@ -324,7 +632,7 @@
                                 <span class="price-label">2% 18000 Caladas</span>
                                 <span class="price-value">Falcon X 18K</span>
                             </div>
-                            <button class="btn btn-primary btn-small"><a href="https://www.elvapero.es/products/jnr-falcon-x-18k-caladas-18000">COMPRAR AHORA</a></button>
+                            <button class="btn btn-primary btn-small"><a href="https://elvapero.es/products/jnr-falcon-x-18k-caladas-18000">COMPRAR AHORA</a></button>
                         </div>
                     </div>
                 </div>
@@ -342,7 +650,7 @@
                                 <span class="price-label">2% 48000 Caladas</span>
                                 <span class="price-value">Falcon 48K</span>
                             </div>
-                            <button class="btn btn-primary btn-small"><a href="https://www.elvapero.es/products/jnr-falcon-bar-48k-caladas-48000">COMPRAR AHORA</a></button>
+                            <button class="btn btn-primary btn-small"><a href="https://elvapero.es/products/jnr-falcon-bar-48k-caladas-48000">COMPRAR AHORA</a></button>
                         </div>
                     </div>
                 </div>
@@ -360,7 +668,7 @@
                                 <span class="price-label">2% 28000 Caladas</span>
                                 <span class="price-value">Falcon Pro 28K</span>
                             </div>
-                            <button class="btn btn-primary btn-small"><a href="https://www.elvapero.es/products/jnr-falcon-pro-28k-caladas-28000">COMPRAR AHORA</a></button>
+                            <button class="btn btn-primary btn-small"><a href="https://elvapero.es/products/jnr-falcon-pro-28k-caladas-28000">COMPRAR AHORA</a></button>
                         </div>
                     </div>
                 </div>
@@ -438,7 +746,7 @@
                             <circle cx="8" cy="17" r="1" fill="white" />
                             <circle cx="15" cy="17" r="1" fill="white" />
                         </svg>
-                        <a href="https://www.elvapero.es/products/jnr-alien-10k-caladas-10000">COMPRAR AHORA</a>
+                        <a href="https://elvapero.es/products/jnr-alien-10k-caladas-10000">COMPRAR AHORA</a>
                     </button>
                 </div>
                 <div class="details-right">
@@ -552,7 +860,7 @@
                     <img src="images/logo.png" alt="JNR caladas vapers desechables vaper desechable vaper con nicotina cigarrillos electrónicos muchas caladas sabores vaper puff cigarrillos electrónicos desechables" class="category-icon">
                     <span class="category-name">Quads - 120K</span>
                 </a>
-                  <a href="https://www.elvapero.es/products/jnr-triple-110k-caladas-110000" class="category-card">
+                  <a href="https://elvapero.es/products/jnr-triple-110k-caladas-110000" class="category-card">
                     <img src="images/logo.png" alt="JNR caladas vapers desechables vaper desechable vaper con nicotina cigarrillos electrónicos muchas caladas sabores vaper puff cigarrillos electrónicos desechables" class="category-icon">
                     <span class="category-name">Triple - 110K</span>
                 </a>
@@ -564,11 +872,11 @@
                     <img src="images/logo.png" alt="JNR caladas vapers desechables vaper desechable vaper con nicotina cigarrillos electrónicos muchas caladas sabores vaper puff cigarrillos electrónicos desechables" class="category-icon">
                     <span class="category-name">Mega Box Pro - 50K</span>
                 </a>
-                  <a href="https://www.elvapero.es/products/jnr-mega-box-25k-caladas-25000" class="category-card">
+                  <a href="https://elvapero.es/products/jnr-mega-box-25k-caladas-25000" class="category-card">
                     <img src="images/logo.png" alt="JNR caladas vapers desechables vaper desechable vaper con nicotina cigarrillos electrónicos muchas caladas sabores vaper puff cigarrillos electrónicos desechables" class="category-icon">
                     <span class="category-name">Mega Box - 25K</span>
                 </a>
-                  <a href="https://www.elvapero.es/products/jnr-leopard-40k-caladas-40000" class="category-card">
+                  <a href="https://elvapero.es/products/jnr-leopard-40k-caladas-40000" class="category-card">
                     <img src="images/logo.png" alt="JNR caladas vapers desechables vaper desechable vaper con nicotina cigarrillos electrónicos muchas caladas sabores vaper puff cigarrillos electrónicos desechables" class="category-icon">
                     <span class="category-name">Leopard - 40K</span>
                 </a>
@@ -608,7 +916,7 @@
                 </a>
             </div>
             <div>
-                <a href="https://www.elvapero.es">
+                <a href="https://elvapero.es">
                     <svg viewBox="0 0 24 24" fill="#000000" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"></path>
                         <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"></path>
@@ -617,14 +925,14 @@
                 </a>
             </div>
             <div>
-                <a href="https://www.elvapero.es">
+                <a href="https://elvapero.es">
                     <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 14.906 32" height="40px">
                         <path d="M14.874,11.167 L14.262,14.207 C14.062,15.208 13.100,15.992 12.072,15.992 L10.000,15.992 L10.000,30.000 C10.000,31.104 9.159,32.000 8.049,32.000 L5.030,32.000 C3.920,32.000 3.017,31.102 3.017,29.999 L3.017,15.992 L2.011,15.992 C0.901,15.992 -0.002,15.095 -0.002,13.991 L-0.002,10.990 C-0.002,9.887 0.901,8.989 2.011,8.989 L3.017,8.989 L3.017,6.003 C3.017,2.716 5.693,0.041 8.994,0.013 C9.015,0.012 9.033,0.001 9.055,0.001 L13.081,0.001 C13.636,0.001 14.000,0.448 14.000,1.000 L14.000,6.000 C14.000,6.553 13.636,7.004 13.081,7.004 L10.061,7.004 L10.060,8.989 L13.079,8.989 C13.645,8.989 14.167,9.228 14.509,9.644 C14.852,10.059 14.985,10.615 14.874,11.167 ZM9.092,10.990 C9.078,10.991 9.067,10.998 9.053,10.998 L9.053,10.998 C8.497,10.997 8.046,10.549 8.047,9.997 L8.047,9.990 C8.047,9.990 8.047,9.990 8.047,9.990 C8.047,9.990 8.047,9.990 8.047,9.990 L8.049,6.003 C8.049,5.450 8.499,5.003 9.055,5.003 L12.074,5.003 L12.074,2.002 L9.094,2.002 C9.077,2.002 9.063,2.011 9.045,2.011 C6.831,2.011 5.030,3.802 5.030,6.003 L5.030,10.005 C5.030,10.558 4.579,11.006 4.023,11.006 C3.996,11.006 3.973,10.992 3.946,10.990 L2.011,10.990 L2.011,13.991 L4.023,13.991 C4.579,13.991 5.030,14.439 5.030,14.992 C5.030,15.044 5.008,15.088 5.000,15.138 L5.000,30.000 L8.049,29.999 L8.049,15.002 C8.049,14.998 8.047,14.995 8.047,14.992 C8.047,14.439 8.497,13.991 9.053,13.991 L12.072,13.991 C12.145,13.991 12.275,13.886 12.288,13.816 L12.857,10.990 L9.092,10.990 Z"></path>
                     </svg>
                 </a>
             </div>
             <div>
-                <a href="https://www.elvapero.es">
+                <a href="https://elvapero.es">
                     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#000000">
                         <path d="M12.94,1.61V15.78a2.83,2.83,0,0,1-2.83,2.83h0a2.83,2.83,0,0,1-2.83-2.83h0a2.84,2.84,0,0,1,2.83-2.84h0V9.17h0A6.61,6.61,0,0,0,3.5,15.78h0a6.61,6.61,0,0,0,6.61,6.61h0a6.61,6.61,0,0,0,6.61-6.61V9.17l.2.1a8.08,8.08,0,0,0,3.58.84h0V6.33l-.11,0a4.84,4.84,0,0,1-3.67-4.7H12.94Z" />
                     </svg>
@@ -634,7 +942,7 @@
         <div class="footer-cont">
             <div class="foot-cont-one">
                 <div class="cont-col">
-                    <a href="https://www.elvapero.es">Productos</a>
+                    <a href="https://elvapero.es">Productos</a>
                     <a href="https://elvapero.es/products/jnr-quads-120k-caladas-120000">Quads 120K</a>
                     <a href="https://elvapero.es/products/jnr-triple-110k-caladas-110000">Triple 110K</a>
                     <a href="https://elvapero.es/products/jnr-ragegorilla-55k-caladas-55000">RageGorilla 55K</a>
@@ -652,10 +960,10 @@
                 </div>
                 <div class="cont-col">
                     <a href="#" class="active">Página Principal</a>
-                    <a href="https://www.elvapero.es">Sobre nosotros</a>
-                    <a href="https://www.elvapero.es">Contacto</a>
-                    <a href="https://www.elvapero.es">Blog</a>
-                    <a href="https://www.elvapero.es">FAQ</a>
+                    <a href="https://elvapero.es">Sobre nosotros</a>
+                    <a href="https://elvapero.es">Contacto</a>
+                    <a href="https://elvapero.es">Blog</a>
+                    <a href="https://elvapero.es">FAQ</a>
                 </div>
             </div>
             <div class="foot-cont-two">
@@ -677,56 +985,56 @@
             <div class="city">
                 <p id="city" >JNR en España</p>
             </div>
-            <a href="https://www.elvapero.es/" style="display: none;">JNR en Madrid</a>
-            <a href="https://www.elvapero.es/" style="display: none;">JNR en Barcelona</a>
-            <a href="https://www.elvapero.es/" style="display: none;">JNR en Valencia</a>
-            <a href="https://www.elvapero.es/" style="display: none;">JNR en Sevilla</a>
-            <a href="https://www.elvapero.es/" style="display: none;">JNR en Zaragoza</a>
-            <a href="https://www.elvapero.es/" style="display: none;">JNR en Málaga</a>
-            <a href="https://www.elvapero.es/" style="display: none;">JNR en Las Palmas de Gran Canaria</a>
-            <a href="https://www.elvapero.es/" style="display: none;">JNR en Bilbao</a>
-            <a href="https://www.elvapero.es/" style="display: none;">JNR en Murcia</a>
-            <a href="https://www.elvapero.es/" style="display: none;">JNR en Valladolid</a>
-            <a href="https://www.elvapero.es/" style="display: none;">JNR en Córdoba</a>
-            <a href="https://www.elvapero.es/" style="display: none;">JNR en Palma de Mallorca</a>
-            <a href="https://www.elvapero.es/" style="display: none;">JNR en Vigo</a>
-            <a href="https://www.elvapero.es/" style="display: none;">JNR en Alicante</a>
-            <a href="https://www.elvapero.es/" style="display: none;">JNR en Gijón</a>
-            <a href="https://www.elvapero.es/" style="display: none;">JNR en Hospitalet de Llobregat</a>
-            <a href="https://www.elvapero.es/" style="display: none;">JNR en Granada</a>
-            <a href="https://www.elvapero.es/" style="display: none;">JNR en A Coruña</a>
-            <a href="https://www.elvapero.es/" style="display: none;">JNR en Vitoria-Gasteiz</a>
-            <a href="https://www.elvapero.es/" style="display: none;">JNR en Badalona</a>
-            <a href="https://www.elvapero.es/" style="display: none;">JNR en Santa Cruz de Tenerife</a>
-            <a href="https://www.elvapero.es/" style="display: none;">JNR en Oviedo</a>
-            <a href="https://www.elvapero.es/" style="display: none;">JNR en Móstoles</a>
-            <a href="https://www.elvapero.es/" style="display: none;">JNR en Elche</a>
-            <a href="https://www.elvapero.es/" style="display: none;">JNR en Sabadell</a>
-            <a href="https://www.elvapero.es/" style="display: none;">JNR en Santander</a>
-            <a href="https://www.elvapero.es/" style="display: none;">JNR en Jerez de la Frontera</a>
-            <a href="https://www.elvapero.es/" style="display: none;">JNR en San Sebastián</a>
-            <a href="https://www.elvapero.es/" style="display: none;">JNR en Leganés</a>
-            <a href="https://www.elvapero.es/" style="display: none;">JNR en Almería</a>
-            <a href="https://www.elvapero.es/" style="display: none;">JNR en Cartagena</a>
-            <a href="https://www.elvapero.es/" style="display: none;">JNR en Terrassa</a>
-            <a href="https://www.elvapero.es/" style="display: none;">JNR en Alcalá de Henares</a>
-            <a href="https://www.elvapero.es/" style="display: none;">JNR en Fuenlabrada</a>
-            <a href="https://www.elvapero.es/" style="display: none;">JNR en Pamplona</a>
-            <a href="https://www.elvapero.es/" style="display: none;">JNR en Burgos</a>
-            <a href="https://www.elvapero.es/" style="display: none;">JNR en Salamanca</a>
-            <a href="https://www.elvapero.es/" style="display: none;">JNR en Albacete</a>
-            <a href="https://www.elvapero.es/" style="display: none;">JNR en León</a>
-            <a href="https://www.elvapero.es/" style="display: none;">JNR en Getafe</a>
-            <a href="https://www.elvapero.es/" style="display: none;">JNR en Alcorcón</a>
-            <a href="https://www.elvapero.es/" style="display: none;">JNR en Cádiz</a>
-            <a href="https://www.elvapero.es/" style="display: none;">JNR en Huelva</a>
-            <a href="https://www.elvapero.es/" style="display: none;">JNR en Castellón de la Plana</a>
-            <a href="https://www.elvapero.es/" style="display: none;">JNR en Badajoz</a>
-            <a href="https://www.elvapero.es/" style="display: none;">JNR en Logroño</a>
-            <a href="https://www.elvapero.es/" style="display: none;">JNR en Santa Coloma de Gramanet</a>
-            <a href="https://www.elvapero.es/" style="display: none;">JNR en La Laguna</a>
-            <a href="https://www.elvapero.es/" style="display: none;">JNR en Lleida</a>
-            <a href="https://www.elvapero.es/" style="display: none;">JNR en Tarragona</a>
+            <a href="https://elvapero.es/" style="display: none;">JNR en Madrid</a>
+            <a href="https://elvapero.es/" style="display: none;">JNR en Barcelona</a>
+            <a href="https://elvapero.es/" style="display: none;">JNR en Valencia</a>
+            <a href="https://elvapero.es/" style="display: none;">JNR en Sevilla</a>
+            <a href="https://elvapero.es/" style="display: none;">JNR en Zaragoza</a>
+            <a href="https://elvapero.es/" style="display: none;">JNR en Málaga</a>
+            <a href="https://elvapero.es/" style="display: none;">JNR en Las Palmas de Gran Canaria</a>
+            <a href="https://elvapero.es/" style="display: none;">JNR en Bilbao</a>
+            <a href="https://elvapero.es/" style="display: none;">JNR en Murcia</a>
+            <a href="https://elvapero.es/" style="display: none;">JNR en Valladolid</a>
+            <a href="https://elvapero.es/" style="display: none;">JNR en Córdoba</a>
+            <a href="https://elvapero.es/" style="display: none;">JNR en Palma de Mallorca</a>
+            <a href="https://elvapero.es/" style="display: none;">JNR en Vigo</a>
+            <a href="https://elvapero.es/" style="display: none;">JNR en Alicante</a>
+            <a href="https://elvapero.es/" style="display: none;">JNR en Gijón</a>
+            <a href="https://elvapero.es/" style="display: none;">JNR en Hospitalet de Llobregat</a>
+            <a href="https://elvapero.es/" style="display: none;">JNR en Granada</a>
+            <a href="https://elvapero.es/" style="display: none;">JNR en A Coruña</a>
+            <a href="https://elvapero.es/" style="display: none;">JNR en Vitoria-Gasteiz</a>
+            <a href="https://elvapero.es/" style="display: none;">JNR en Badalona</a>
+            <a href="https://elvapero.es/" style="display: none;">JNR en Santa Cruz de Tenerife</a>
+            <a href="https://elvapero.es/" style="display: none;">JNR en Oviedo</a>
+            <a href="https://elvapero.es/" style="display: none;">JNR en Móstoles</a>
+            <a href="https://elvapero.es/" style="display: none;">JNR en Elche</a>
+            <a href="https://elvapero.es/" style="display: none;">JNR en Sabadell</a>
+            <a href="https://elvapero.es/" style="display: none;">JNR en Santander</a>
+            <a href="https://elvapero.es/" style="display: none;">JNR en Jerez de la Frontera</a>
+            <a href="https://elvapero.es/" style="display: none;">JNR en San Sebastián</a>
+            <a href="https://elvapero.es/" style="display: none;">JNR en Leganés</a>
+            <a href="https://elvapero.es/" style="display: none;">JNR en Almería</a>
+            <a href="https://elvapero.es/" style="display: none;">JNR en Cartagena</a>
+            <a href="https://elvapero.es/" style="display: none;">JNR en Terrassa</a>
+            <a href="https://elvapero.es/" style="display: none;">JNR en Alcalá de Henares</a>
+            <a href="https://elvapero.es/" style="display: none;">JNR en Fuenlabrada</a>
+            <a href="https://elvapero.es/" style="display: none;">JNR en Pamplona</a>
+            <a href="https://elvapero.es/" style="display: none;">JNR en Burgos</a>
+            <a href="https://elvapero.es/" style="display: none;">JNR en Salamanca</a>
+            <a href="https://elvapero.es/" style="display: none;">JNR en Albacete</a>
+            <a href="https://elvapero.es/" style="display: none;">JNR en León</a>
+            <a href="https://elvapero.es/" style="display: none;">JNR en Getafe</a>
+            <a href="https://elvapero.es/" style="display: none;">JNR en Alcorcón</a>
+            <a href="https://elvapero.es/" style="display: none;">JNR en Cádiz</a>
+            <a href="https://elvapero.es/" style="display: none;">JNR en Huelva</a>
+            <a href="https://elvapero.es/" style="display: none;">JNR en Castellón de la Plana</a>
+            <a href="https://elvapero.es/" style="display: none;">JNR en Badajoz</a>
+            <a href="https://elvapero.es/" style="display: none;">JNR en Logroño</a>
+            <a href="https://elvapero.es/" style="display: none;">JNR en Santa Coloma de Gramanet</a>
+            <a href="https://elvapero.es/" style="display: none;">JNR en La Laguna</a>
+            <a href="https://elvapero.es/" style="display: none;">JNR en Lleida</a>
+            <a href="https://elvapero.es/" style="display: none;">JNR en Tarragona</a>
         </div>
        <div class="copyright">
             <p>© <span id="year"></span> jnrpuff.es -  Vapers Desechables en España.</p>
